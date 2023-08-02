@@ -41,6 +41,7 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .fontWeight(.heavy)
                         .foregroundColor(Color.white)
+                      
                         
                       Text("Welcome")
                           .font(.title2)
@@ -48,10 +49,22 @@ struct ContentView: View {
                           .foregroundColor(Color.yellow)
                           .padding(.bottom)
                       NavigationLink(destination: SignUpView()) {
-                        Text("Sign Up")
+                          Text("Sign Up")
+                              .foregroundColor(Color.black)
+                              .padding()
+                              .frame(width: 300, height: 50)
+                              .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                              .cornerRadius(10)
+                              .border(.red, width:100)
                         }
                       NavigationLink(destination: LogInView()) {
-                        Text("Log In")
+                          Text("Log In")
+                              .foregroundColor(Color.black)
+                              .padding()
+                              .frame(width: 300, height: 50)
+                              .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                              .cornerRadius(10)
+                              .border(.red, width:100)
                   }
                       
                   
