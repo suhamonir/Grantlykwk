@@ -48,7 +48,7 @@ struct ContentView: View {
                           .fontWeight(.semibold)
                           .foregroundColor(Color.yellow)
                           .padding(.bottom)
-                      NavigationLink(destination: SignUpView()) {
+                      NavigationLink(destination: userQuiz()) {
                           Text("Sign Up")
                               .foregroundColor(Color.black)
                               .padding()
@@ -58,7 +58,7 @@ struct ContentView: View {
                               .border(.red, width:100)
                         }
                       NavigationLink(destination: LogInView()) {
-                          Text("Log In")
+                      Text("Log In")
                               .foregroundColor(Color.black)
                               .padding()
                               .frame(width: 300, height: 50)

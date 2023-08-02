@@ -50,15 +50,14 @@ struct LogInView: View {
                     .background(Color.blue)
                     .cornerRadius(10)
                     
-                    NavigationLink(destination: LogInView()) { Text("You are logged in @\(username)");, isActive: $showingLoginScreen) {
+                    NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen) {
                         EmptyView()
+                        
                     }
-                    }
+                    .navigationBarHidden(true)
+                    
+                    
                 }
-                .navigationBarHidden(true)
-                
-                
-                
             }
             
         }
