@@ -13,6 +13,7 @@
 		BD92AC4D2A780F1A00CD6E88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD92AC4C2A780F1A00CD6E88 /* Preview Assets.xcassets */; };
 		BDB992502A7AA31E00D754C3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB9924F2A7AA31E00D754C3 /* HomeView.swift */; };
 		BDB992522A7AB15B00D754C3 /* userQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB992512A7AB15B00D754C3 /* userQuiz.swift */; };
+		BDB992562A7ABC2100D754C3 /* ScholarshipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB992552A7ABC2100D754C3 /* ScholarshipsView.swift */; };
 		BDF70DC52A79605D00677A8F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF70DC42A79605D00677A8F /* LogInView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		BD92AC4C2A780F1A00CD6E88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BDB9924F2A7AA31E00D754C3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BDB992512A7AB15B00D754C3 /* userQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userQuiz.swift; sourceTree = "<group>"; };
+		BDB992552A7ABC2100D754C3 /* ScholarshipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholarshipsView.swift; sourceTree = "<group>"; };
 		BDF70DC42A79605D00677A8F /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 				BDF70DC42A79605D00677A8F /* LogInView.swift */,
 				BDB992512A7AB15B00D754C3 /* userQuiz.swift */,
 				BDB9924F2A7AA31E00D754C3 /* HomeView.swift */,
+				BDB992552A7ABC2100D754C3 /* ScholarshipsView.swift */,
 				BD92AC492A780F1A00CD6E88 /* Assets.xcassets */,
 				BD92AC4B2A780F1A00CD6E88 /* Preview Content */,
 			);
@@ -151,6 +154,7 @@
 				BDB992522A7AB15B00D754C3 /* userQuiz.swift in Sources */,
 				BDB992502A7AA31E00D754C3 /* HomeView.swift in Sources */,
 				BD92AC462A780F1700CD6E88 /* GrantlykwkApp.swift in Sources */,
+				BDB992562A7ABC2100D754C3 /* ScholarshipsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
