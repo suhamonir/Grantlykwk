@@ -10,7 +10,6 @@ import SwiftUI
 struct userQuiz: View {
     
     @State private var name = " "
-      @State private var nameQuestion = "First and Last Name"
       @State private var age = " "
       @State private var ageQues = "Grade Level"
       @State private var email = " "
@@ -49,86 +48,141 @@ struct userQuiz: View {
                             .fontWeight(.semibold)
                             .foregroundColor(Color.white)
                         
-                        GroupBox{
-                            Text(nameQuestion)
+                        Group{
+                            Text("First and Last Name")
+                                .foregroundColor(Color.white)
                             TextField("Type Name Here...", text: $name)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.gray, width: 1)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                                .cornerRadius(10)
                             
-                            Text(ageQues)
+                            Text("Grade Level")
+                                .foregroundColor(Color.white)
                             TextField("Type Age Here...", text: $age)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.gray, width: 1)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                                .cornerRadius(10)
                             
-                            Text(emailQues)
+                            Text("Email Address")
+                                .foregroundColor(Color.white)
                             TextField("Type email Here...", text: $email)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.gray, width: 1)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                                .cornerRadius(10)
                             
-                            Text(schoolQues)
+                            Text("School Name")
+                                .foregroundColor(Color.white)
                             TextField("Type school Here...", text: $school)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.gray, width: 1)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                                .cornerRadius(10)
                             
                             
-                            Text(addressQues)
+                            Text("Home Address")
+                                .foregroundColor(Color.white)
                             TextField("Type your Address Here...", text: $address)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.gray, width: 1)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                                .cornerRadius(10)
                         }
                             
-                        GroupBox{
+                        Group{
                             Text("Extracurricular")
+                                .foregroundColor(Color.white)
                             TextField("Type Extracurricular Here...", text: $extracurricular)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.gray, width: 1)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                                .cornerRadius(10)
                             
                             Text("GPA")
+                                .foregroundColor(Color.white)
                             TextField("Type GPA Here...", text: $gpa)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.gray, width: 1)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                                .cornerRadius(10)
                             
                             
                             Text("College Major")
+                                .foregroundColor(Color.white)
                             TextField("Type major Here...", text: $collegeMajor)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.gray, width: 1)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                                .cornerRadius(10)
                             
                             Text("Family Income")
+                                .foregroundColor(Color.white)
                             TextField("Type income Here...", text: $familyIncome)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.gray, width: 1)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                                .cornerRadius(10)
                             
                         }
                         
-                        GroupBox{
+                        Group{
                             Text("Username")
+                                .foregroundColor(Color.white)
                             TextField("Type Username Here...", text: $username)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.gray, width: 1)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                                .cornerRadius(10)
                             
                             Text("Password")
+                                .foregroundColor(Color.white)
                             TextField("Type password Here...", text: $password)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.gray, width: 1)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                                .cornerRadius(10)
                             
                             NavigationLink(destination: HomeView()) {
                                 Text("Submit")
-                                    .font(.title2)
-                                    .fontWeight(.semibold)
-                                    .buttonStyle(.borderedProminent)
-                                    .tint(.purple)
+                                    .foregroundColor(.white)
+                                    .frame(width:300, height:50)
+                                    .background(Color.blue)
+                                    .cornerRadius(10)
                             }
                             
                         }

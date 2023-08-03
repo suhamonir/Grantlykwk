@@ -12,6 +12,16 @@ struct HomeView: View {
         
         NavigationStack{
             ZStack{
+                
+                LinearGradient(gradient: Gradient(colors: [
+                    Color(uiColor: UIColor(red: 2/225, green: 48/225, blue: 71/225, alpha: 1)),
+                    Color(uiColor: UIColor(red: 20/225, green: 75/225, blue: 100/225, alpha: 1)),
+                    Color(uiColor: UIColor(red: 33/225, green: 158/225, blue: 188/255, alpha: 1))
+                ]),
+                               startPoint: .center,
+                               endPoint: .bottom)
+                .ignoresSafeArea()
+                
                 Image("home")
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fill)

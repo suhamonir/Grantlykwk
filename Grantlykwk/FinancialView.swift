@@ -22,23 +22,30 @@ struct FinancialView: View {
                 .ignoresSafeArea()
                 
                 VStack{
-                    Text("Financial Aid Guide")
-                        .font(.largeTitle)
-                        .foregroundColor(Color.white)
-                    
                     Spacer()
                         .frame(height: 40.0)
+                    
+                    Text("Financial Aid Guide")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.white)
+                    Spacer()
+                }
+                    
+                VStack{
                     
                     Text("College financial aid can be a crucial aspect of making higher education accessible and affordable for students and their families. Understanding how it works can significantly alleviate the financial burden associated with attending college. Here's a 200-word guide on the basics of college financial aid:")
                         .font(.body)
                         .foregroundColor(Color.white)
-                     
+                    
                     Spacer()
                         .frame(height: 40.0)
                     
                     Text("College financial aid encompasses various resources, such as grants, scholarships, loans, and work-study programs. To begin the process, students and their families should complete the Free Application for Federal Student Aid (FAFSA). This form evaluates their financial situation to determine eligibility for federal aid programs, as well as aid offered by individual colleges or universities.")
                         .foregroundColor(Color.white)
-
+                  
+                    Spacer()
+                        .frame(height: 40.0)
                     
                 }
                 .padding()
