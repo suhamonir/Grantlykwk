@@ -1,16 +1,15 @@
 //
-//  ScholarshipsView.swift
+//  FinancialView.swift
 //  Grantlykwk
 //
-//  Created by Scholar on 8/2/23.
+//  Created by Scholar on 8/3/23.
 //
 
 import SwiftUI
 
-struct ScholarshipsView: View {
+struct FinancialView: View {
     var body: some View {
-        
-        
+    
         NavigationStack{
             ZStack {
                 LinearGradient(gradient: Gradient(colors: [
@@ -22,22 +21,42 @@ struct ScholarshipsView: View {
                                endPoint: .bottom)
                 .ignoresSafeArea()
                 
-                
-                
-                VStack {
-                    Image("scholarshipss")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fill)
+                VStack{
+                    Text("Financial Aid Guide")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.white)
                     
+                    Spacer()
+                        .frame(height: 40.0)
                     
+                    Text("College financial aid can be a crucial aspect of making higher education accessible and affordable for students and their families. Understanding how it works can significantly alleviate the financial burden associated with attending college. Here's a 200-word guide on the basics of college financial aid:")
+                        .font(.body)
+                        .foregroundColor(Color.white)
+                     
+                    Spacer()
+                        .frame(height: 40.0)
                     
-                    
+                    Text("College financial aid encompasses various resources, such as grants, scholarships, loans, and work-study programs. To begin the process, students and their families should complete the Free Application for Federal Student Aid (FAFSA). This form evaluates their financial situation to determine eligibility for federal aid programs, as well as aid offered by individual colleges or universities.")
+                        .foregroundColor(Color.white)
+
                     
                 }
+                .padding()
+                
+                VStack{
+                    
+                
+                    Spacer()
+                    Image("navbar")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                    
+                }
+                
                 VStack{
                     
                     Spacer()
-                        .frame(height: 730.0)
+                        .frame(height: 700.0)
                     
                     
                     HStack(alignment: .bottom){
@@ -45,6 +64,7 @@ struct ScholarshipsView: View {
                         NavigationLink(destination: HomeView()) {
                             Text("Home")
                                 .foregroundColor(Color.white)
+                    
                         }
                         
                         Spacer()
@@ -75,14 +95,15 @@ struct ScholarshipsView: View {
                 }
                 
             }
+            
         }
-        
-       
+
+
     }
 }
 
-struct ScholarshipsView_Previews: PreviewProvider {
+struct FinancialView_Previews: PreviewProvider {
     static var previews: some View {
-        ScholarshipsView()
+        FinancialView()
     }
 }

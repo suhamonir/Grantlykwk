@@ -21,7 +21,7 @@ struct HomeView: View {
                 VStack{
                     
                     Spacer()
-                        .frame(height: 780.0)
+                        .frame(height: 660.0)
                     
                     HStack(alignment: .bottom){
                         
@@ -33,7 +33,7 @@ struct HomeView: View {
                             Spacer()
                                 .frame(width: 35.0)
                         
-                        NavigationLink(destination: ProfileView()) {
+                        NavigationLink(destination: SearchView()) {
                             Text("Search")
                                 .foregroundColor(Color.white)
                         }

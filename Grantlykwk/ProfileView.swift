@@ -36,7 +36,7 @@ struct ProfileView: View {
                        .tint(.orange)
                        
                        HStack{
-                           Button("My Scholarship"){
+                           Button("My Scholarships"){
                                
                            }
                            .font(.title3)
@@ -67,7 +67,55 @@ struct ProfileView: View {
                        Image("scholarship")
                            .resizable(resizingMode: .stretch)
                            .aspectRatio(contentMode: .fit)
+                       
+                       Spacer()
+                           .frame(height: 10.0)
+                       
+                       Image("navbar")
+                           .resizable(resizingMode: .stretch)
+                           .aspectRatio(contentMode: .fit)
                    }
+            
+            VStack{
+                    
+                    Spacer()
+                    .frame(height: 700.0)
+                    
+                    
+                    HStack(alignment: .bottom){
+                        
+                        NavigationLink(destination: HomeView()) {
+                            Text("Home")
+                                .foregroundColor(Color.white)
+                        }
+                        
+                        Spacer()
+                            .frame(width: 35.0)
+                        
+                        NavigationLink(destination: SearchView()) {
+                            Text("Search")
+                                .foregroundColor(Color.white)
+                        }
+                        
+                        Spacer()
+                            .frame(width: 35.0)
+                        
+                        NavigationLink(destination: ProfileView()) {
+                            Text("Profile")
+                                .foregroundColor(Color.white)
+                        }
+                        
+                        Spacer()
+                            .frame(width: 35.0)
+                        
+                        NavigationLink(destination: HomeView()) {
+                            Text("Settings")
+                                .foregroundColor(Color.white)
+                    
+                    }
+                    
+                }
+            }
                    
                    .padding()
                }

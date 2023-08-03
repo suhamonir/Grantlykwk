@@ -1,15 +1,14 @@
 //
-//  ScholarshipsView.swift
+//  SearchView.swift
 //  Grantlykwk
 //
-//  Created by Scholar on 8/2/23.
+//  Created by Scholar on 8/3/23.
 //
 
 import SwiftUI
 
-struct ScholarshipsView: View {
+struct SearchView: View {
     var body: some View {
-        
         
         NavigationStack{
             ZStack {
@@ -23,21 +22,45 @@ struct ScholarshipsView: View {
                 .ignoresSafeArea()
                 
                 
-                
-                VStack {
-                    Image("scholarshipss")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fill)
-                    
-                    
-                    
-                    
-                    
-                }
                 VStack{
                     
                     Spacer()
-                        .frame(height: 730.0)
+                    
+                    NavigationLink(destination: ScholarshipsView()) {
+                        Text("Scholarships Search")
+                            .font(.title)
+                            .foregroundColor(Color.white)
+                            .padding()
+                            .frame(width: 300, height: 50)
+                            .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                            .cornerRadius(10)
+                            .border(.red, width:100)
+                    }
+                    
+                    NavigationLink(destination: FinancialView()) {
+                        Text("Financial Aid Guide")
+                            .font(.title)
+                            .foregroundColor(Color.white)
+                            .padding()
+                            .frame(width: 300, height: 50)
+                            .background(Color.init(uiColor: lightBlue).opacity(0.8))
+                            .cornerRadius(10)
+                            .border(.red, width:100)
+                    }
+                    
+                    .padding()
+                
+                    Spacer()
+                    Image("navbar")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                    
+                }
+                
+                VStack{
+                    
+                    Spacer()
+                        .frame(height: 700.0)
                     
                     
                     HStack(alignment: .bottom){
@@ -45,6 +68,7 @@ struct ScholarshipsView: View {
                         NavigationLink(destination: HomeView()) {
                             Text("Home")
                                 .foregroundColor(Color.white)
+                    
                         }
                         
                         Spacer()
@@ -75,14 +99,14 @@ struct ScholarshipsView: View {
                 }
                 
             }
+            
         }
         
-       
     }
 }
 
-struct ScholarshipsView_Previews: PreviewProvider {
+struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        ScholarshipsView()
+        SearchView()
     }
 }

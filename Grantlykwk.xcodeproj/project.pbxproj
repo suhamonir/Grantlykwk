@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD2EADBF2A7C187A009999EA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2EADBE2A7C187A009999EA /* SearchView.swift */; };
+		BD2EADC12A7C197E009999EA /* FinancialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2EADC02A7C197E009999EA /* FinancialView.swift */; };
 		BD92AC462A780F1700CD6E88 /* GrantlykwkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD92AC452A780F1700CD6E88 /* GrantlykwkApp.swift */; };
 		BD92AC482A780F1700CD6E88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD92AC472A780F1700CD6E88 /* ContentView.swift */; };
 		BD92AC4A2A780F1A00CD6E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD92AC492A780F1A00CD6E88 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD2EADBE2A7C187A009999EA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		BD2EADC02A7C197E009999EA /* FinancialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialView.swift; sourceTree = "<group>"; };
 		BD92AC422A780F1700CD6E88 /* Grantlykwk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grantlykwk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD92AC452A780F1700CD6E88 /* GrantlykwkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrantlykwkApp.swift; sourceTree = "<group>"; };
 		BD92AC472A780F1700CD6E88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				BDB9924F2A7AA31E00D754C3 /* HomeView.swift */,
 				BD9E27BE2A7BEB76000893B1 /* ProfileView.swift */,
 				BDB992552A7ABC2100D754C3 /* ScholarshipsView.swift */,
+				BD2EADBE2A7C187A009999EA /* SearchView.swift */,
+				BD2EADC02A7C197E009999EA /* FinancialView.swift */,
 				BD92AC492A780F1A00CD6E88 /* Assets.xcassets */,
 				BD92AC4B2A780F1A00CD6E88 /* Preview Content */,
 			);
@@ -156,7 +162,9 @@
 				BDF70DC52A79605D00677A8F /* LogInView.swift in Sources */,
 				BDB992522A7AB15B00D754C3 /* userQuiz.swift in Sources */,
 				BDB992502A7AA31E00D754C3 /* HomeView.swift in Sources */,
+				BD2EADBF2A7C187A009999EA /* SearchView.swift in Sources */,
 				BD92AC462A780F1700CD6E88 /* GrantlykwkApp.swift in Sources */,
+				BD2EADC12A7C197E009999EA /* FinancialView.swift in Sources */,
 				BD9E27BF2A7BEB76000893B1 /* ProfileView.swift in Sources */,
 				BDB992562A7ABC2100D754C3 /* ScholarshipsView.swift in Sources */,
 			);
